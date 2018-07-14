@@ -12,7 +12,7 @@ class CreateClients < ActiveRecord::Migration[5.2]
       t.string :bank
       t.string :family_name
       t.string :family_number
-      t.integer :medicare
+      t.string :medicare
       t.integer :medicaid
       t.float :ssdi
       t.float :ssi
@@ -24,7 +24,7 @@ class CreateClients < ActiveRecord::Migration[5.2]
       t.date :renewal_date
       t.date :interview_date
       t.boolean :interview_completed
-      t.date :update
+      t.date :update_date
       t.date :verification_due
       t.date :verification_submitted
       t.boolean :denied
@@ -35,7 +35,7 @@ class CreateClients < ActiveRecord::Migration[5.2]
       t.integer :client_id
       t.string :login
       t.string :caseworker
-      t.integer :cw_number
+      t.string :cw_number
 
       t.timestamps
     end
